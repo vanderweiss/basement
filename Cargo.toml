@@ -1,0 +1,15 @@
+[package]
+name = "basement"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = { version = "0.5.0-rc.2", features = ["tls", "secrets"] }
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+strip = "symbols"

@@ -1,0 +1,31 @@
+[default]
+address = "192.168.0.13"
+port = 443
+workers = 16
+max_blocking = 512
+keep_alive = 5
+ident = "Rocket"
+log_level = "normal"
+temp_dir = "/tmp"
+cli_colors = true
+secret_key = "orujoAvyTaU+ZCffvucVJtNVNkMPGODO95oQ1/4VIsk="
+
+[default.limits]
+form = "64 kB"
+json = "1 MiB"
+msgpack = "2 MiB"
+"file/jpg" = "5 MiB"
+
+[default.tls]
+certs = "tsl/cert.pem"
+key = "tsl/key.pem"
+
+#[default.tls.mutual]
+#ca_certs = "ssl/cert-chain.pem"
+#mandatory = true
+
+[default.shutdown]
+ctrlc = true
+signals = ["term", "hup"]
+grace = 5
+mercy = 5
