@@ -1,2 +1,2 @@
 # basement
-blazingly fast, memory safe, rocket rocket
+hosted on my own domain, transferred to cloudflare
