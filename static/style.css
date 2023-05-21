@@ -37,12 +37,10 @@ section {
 	position: relative;
 	border-bottom: solid;
 	border-color: white;
-	border-bottom-style: dashed;
+	border-bottom-style: ridge;
 }
 
 #profile-content {}
-
-#profile-logo {}
 
 #profile-title {
 	position: absolute;
@@ -54,3 +52,19 @@ section {
 }
 
 #intro-content {}
+
+#intro-social {
+	width: 50%;
+	margin-top: 1.5em;	
+}
+
+._intro-social-element {
+	overflow: clip;
+	width: 10%; 
+	margin: auto 1em;
+}
+
+.intro-social-element {
+	height: auto;
+	width: 15%;
+}
