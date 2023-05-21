@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 * {
-	font-family: 'Tilt Neon', cursive;	
+	color: white;
+	font-family: 'Tilt Neon', bold;
 }
 
 html, body {
 	height: 100%;
+	width: 100%;
 }
 
 html {
@@ -13,17 +15,42 @@ html {
 }
 
 body {
+	overflow: hidden;
 	background-color: black;
 	background-size: auto;
 	margin: 0;
-	overflow: hidden;
 }
 
 main {
-	height: 50%;
-	width: 70%;
-} 
-
-#profile {
-
+	height: 100%;
+	width: 30%;
+	margin: auto;
 }
+
+section {
+	width: 100%;
+	margin: 0;
+}
+
+#profile-box {
+	height: 15%;
+	position: relative;
+	border-bottom: solid;
+	border-color: white;
+	border-bottom-style: dashed;
+}
+
+#profile-content {}
+
+#profile-logo {}
+
+#profile-title {
+	position: absolute;
+	bottom: 0;
+}
+
+#intro-box {
+	height: 60%;
+}
+
+#intro-content {}
