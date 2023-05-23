@@ -16,7 +16,7 @@ html {
 
 body {
 	overflow: hidden;
-	background-color: black;
+	background-color: #0f0f0f;
 	background-size: auto;
 	margin: 0;
 }
@@ -35,9 +35,6 @@ section {
 #profile-box {
 	height: 15%;
 	position: relative;
-	border-bottom: solid;
-	border-color: white;
-	border-bottom-style: ridge;
 }
 
 #profile-content {}
@@ -59,12 +56,18 @@ section {
 }
 
 ._intro-social-element {
-	overflow: clip;
-	width: 10%; 
-	margin: auto 1em;
+	overflow: visible;
+	margin: auto 0.5em;
 }
 
 .intro-social-element {
-	height: auto;
-	width: 15%;
+	height: 2.5em;
+}
+
+#intro-social-element-github {
+	
+}
+
+#intro-social-element-discord {
+	transform: scale(0.9) 	
 }
