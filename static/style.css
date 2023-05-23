@@ -15,16 +15,19 @@ html {
 }
 
 body {
-	overflow: hidden;
 	background-color: #0f0f0f;
 	background-size: auto;
 	margin: 0;
 }
 
 main {
-	height: 100%;
+	height: fit-content;
 	width: 30%;
 	margin: auto;
+	position: absolute;
+	top: 25%;
+	left:  50%;
+	transform: translate(-50%, -25%);
 }
 
 section {
@@ -32,16 +35,39 @@ section {
 	margin: 0;
 }
 
+@media screen and (max-width: 64rem) {
+  main {
+  	width: 75%;
+  }
+}
+@media screen and (max-height: 25rem) {
+  main {
+    position: absolute;
+  	top: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    }
+}
+@media screen and (min-width: 64rem) and (max-height: 25rem) {
+    main{
+    	transform: translate(-50%, 0);
+    }
+}
+@media screen and (max-width: 64rem) and (max-height: 25rem) {
+    main {
+      left: 50%;
+      transform: translate(-50%);
+    }
+}
+
 #profile-box {
 	height: 15%;
-	position: relative;
+	margin: 0;
 }
 
 #profile-content {}
 
 #profile-title {
-	position: absolute;
-	bottom: 0;
 }
 
 #intro-box {
@@ -51,7 +77,7 @@ section {
 #intro-content {}
 
 #intro-social {
-	width: 50%;
+	width: 100%;
 	margin-top: 1.5em;	
 }
 
